@@ -1,0 +1,38 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Kotlin
+.kotlin/
+*.iml
+.idea/
+
+# Android
+local.properties
+*.apk
+*.aab
+.cxx/
+captures/
+
+# Rust
+shared/rust/target/
+shared/rust/.fastembed_cache/
+**/*.rs.bk
+
+# Large build artifacts
+build/bindgen-install/
+shared/build/
+androidApp/build/
+build/
+
+# OS
+.DS_Store
+
+# Env
+.env
+env.local.sh
+env.sh
+
+# Generated / large assets (keep recipes_seed.json tracked; run tools/seed-data/download_model.sh)
+androidApp/src/androidMain/assets/models/

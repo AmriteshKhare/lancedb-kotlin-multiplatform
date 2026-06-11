@@ -1,0 +1,4 @@
+# OpenSSL vendored build: NDK clang rejects x86_64 SM3/SM4 SIMD asm (vsm3msg1, vsm4key4, …).
+# Disabling asm for this target is safe; arm64-v8a builds fine without this.
+[target.x86_64-linux-android.env]
+OPENSSL_NO_ASM = "1"
